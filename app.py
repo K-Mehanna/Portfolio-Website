@@ -38,38 +38,9 @@ db = SQL("sqlite:///contact.db")
 def index():
     return render_template("index.html")
 
-@app.route("/vert", methods=["GET", "POST"])
+@app.route("/vert")
 def vert():
-    if request.method == "GET":
-        return render_template("vert.html")
-        
-
-    else:
-        forename = request.form.get("forename")
-        surname = request.form.get("surname")
-        email = request.form.get("email")
-        subject = request.form.get("subject")
-        message = request.form.get("message")
-
-        if not forename:
-            return apology("Must provide a forename")
-
-        elif not surname:
-            return apology("Must provide a surname")
-        
-        elif not email:
-            return apology("Must provide an email")
-
-        elif not subject:
-            return apology("Must provide a subject")
-
-        elif not message:
-            return apology("Must provide a message")
-
-        db.execute("INSERT INTO messages (Forename, Surname, Email, Subject, Message) VALUES (:forename, :surname, :email, :subject, :message);", forename=forename, surname=surname, email=email, subject=subject, message=message)
-
-        flash("Message sent")
-        return redirect("/vert")
+    return render_template("vert.html"))
 
 
 @app.route("/animated")
