@@ -20,21 +20,14 @@
             </span>
         </div>
         <img src="static/pictures/test2.jpg" id ="background" alt="background image" onclick="bodyClose()">
-        {% if get_flashed_messages() %}
-        <header>
-            <div class="alert alert-primary border text-center" role="alert">
-                {{ get_flashed_messages() | join(" ") }}
-            </div>
-        </header>
-        {% endif %}
         <div id="mySidenav" class="sidenav">
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
                 <div id="icons">
-                    <a href="/">
+                    <a href="index.html">
                         <i class="fas fa-home"></i><br>
                         Home
                     </a>
-                    <a href="/vert">
+                    <a href="vert.html">
                         <i class="fas fa-grip-lines-vertical"></i><br>
                         Vertical Navbar
                     </a>
