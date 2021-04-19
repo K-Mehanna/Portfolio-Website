@@ -2,7 +2,6 @@ html {
     scroll-behavior: smooth;
 }
 
-
 /* The sidebar menu */
 .sidenav {
     height: 100%; /* Full-height: remove this if you want "auto" height */
@@ -187,7 +186,7 @@ h1 {
     padding: 10px;
     border-radius: 15px;
     position: relative;
-    box-shadow: 0 0 20px 20px rgba(68, 88, 144, 0.12);
+    box-shadow: 0 0 20px 0 rgba(68, 88, 144, 0.12);
 }
 
 .overlay {
