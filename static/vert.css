@@ -2,9 +2,6 @@ html {
     scroll-behavior: smooth;
 }
 
-#about {
-    background-color: orange;
-}
 
 /* The sidebar menu */
 .sidenav {
@@ -131,7 +128,7 @@ h1 {
 .main {
     margin-left: 70px; /* Same as the width of the sidebar */
     padding: 5px 10px 5px 15px;
-    background-color: #fcba03;
+    background-color: #f6f9fe;
 }
 
   
@@ -260,5 +257,5 @@ h1 {
 
 /* Background colour of Computer Science Section */ 
 #computing {
-    background-color: white;
+    background-color: #e8f1ff;
 }
