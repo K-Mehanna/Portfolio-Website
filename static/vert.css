@@ -2,6 +2,10 @@ html {
     scroll-behavior: smooth;
 }
 
+#about {
+    background-color: #fcba03;
+}
+
 /* The sidebar menu */
 .sidenav {
     height: 100%; /* Full-height: remove this if you want "auto" height */
